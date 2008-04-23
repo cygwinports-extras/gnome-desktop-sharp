@@ -1,0 +1,121 @@
+gnome-desktop-sharp
+------------------------------------------
+Mono C# bindings for GNOME desktop libraries
+
+Runtime requirements:
+  glib-sharp2-2.12.1-1
+  gtk-sharp2-2.12.1-1
+(gnome-desktop-sharp)
+  libgnome-desktop2-2.20.2-1
+(gtkhtml-sharp)
+  gtkhtml314-3.16.3-1
+(gtksourceview2-sharp)
+  gtksourceview2-2.0.2-1
+(rsvg2-sharp)
+  librsvg2-2.20.0-1
+(vte-sharp)
+  vte-0.16.12-1
+(wnck-sharp)
+  libwnck1_22-2.20.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20060817-1
+  cygport-0.3.9-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.mono-project.org/
+
+Canonical download:
+  http://ftp.acc.umu.se/pub/GNOME/sources/gnome-desktop-sharp/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-desktop-sharp-2.20.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-desktop-sharp-2.20.1-X.cygport all
+
+This will create:
+  /usr/src/gnome-desktop-sharp-2.20.1-X-src.tar.bz2
+  /usr/src/gnome-desktop-sharp-2.20.1-X.tar.bz2
+  /usr/src/gtkhtml-sharp-2.20.1-X.tar.bz2
+  /usr/src/gtksourceview2-sharp-2.20.1-X.tar.bz2
+  /usr/src/rsvg2-sharp-2.20.1-X.tar.bz2
+  /usr/src/vte-sharp-2.20.1-X.tar.bz2
+  /usr/src/wnck-sharp-2.20.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(gnome-desktop-sharp)
+  /usr/lib/mono/gac/gnomedesktop-sharp/2.20.0.0__35e10195dab3c99f/gnomedesktop-sharp.dll
+  /usr/lib/mono/gac/gnomedesktop-sharp/2.20.0.0__35e10195dab3c99f/gnomedesktop-sharp.dll.config
+  /usr/lib/mono/gnomedesktop-sharp-2.20/gnomedesktop-sharp.dll
+  /usr/lib/pkgconfig/gnome-desktop-sharp-2.0.pc
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/AUTHORS
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/COPYING
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/ChangeLog
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/HACKING
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/NEWS
+  /usr/share/doc/gnome-desktop-sharp-2.20.1/README
+  /usr/share/gnomedesktop-sharp/2.20/gnomedesktop-api.xml
+
+(gtkhtml-sharp)
+  /usr/lib/mono/gac/gtkhtml-sharp/3.16.0.0__35e10195dab3c99f/gtkhtml-sharp.dll
+  /usr/lib/mono/gac/gtkhtml-sharp/3.16.0.0__35e10195dab3c99f/gtkhtml-sharp.dll.config
+  /usr/lib/mono/gtkhtml-sharp-3.14/gtkhtml-sharp.dll
+  /usr/lib/pkgconfig/gtkhtml-sharp-3.14.pc
+  /usr/share/gtkhtml-sharp/3.14/gtkhtml-api.xml
+
+(gtksourceview2-sharp)
+  /usr/lib/mono/gac/gtksourceview2-sharp/2.0.0.0__35e10195dab3c99f/gtksourceview2-sharp.dll
+  /usr/lib/mono/gac/gtksourceview2-sharp/2.0.0.0__35e10195dab3c99f/gtksourceview2-sharp.dll.config
+  /usr/lib/mono/gtksourceview2-sharp-2.0/gtksourceview2-sharp.dll
+  /usr/lib/pkgconfig/gtksourceview2-sharp.pc
+  /usr/share/gtksourceview2-sharp/2.0/gtksourceview2-api.xml
+
+(rsvg2-sharp)
+  /usr/lib/mono/gac/rsvg2-sharp/2.18.0.0__35e10195dab3c99f/rsvg2-sharp.dll
+  /usr/lib/mono/gac/rsvg2-sharp/2.18.0.0__35e10195dab3c99f/rsvg2-sharp.dll.config
+  /usr/lib/mono/rsvg2-sharp-2.0/rsvg2-sharp.dll
+  /usr/lib/pkgconfig/rsvg2-sharp-2.0.pc
+  /usr/share/rsvg2-sharp/2.0/rsvg2-api.xml
+
+(vte-sharp)
+  /usr/bin/cygvtesharpglue-2.dll
+  /usr/lib/libvtesharpglue-2.la
+  /usr/lib/mono/gac/vte-sharp/0.16.0.0__35e10195dab3c99f/vte-sharp.dll
+  /usr/lib/mono/gac/vte-sharp/0.16.0.0__35e10195dab3c99f/vte-sharp.dll.config
+  /usr/lib/mono/vte-sharp-0.16/vte-sharp.dll
+  /usr/lib/pkgconfig/vte-sharp-0.16.pc
+  /usr/share/vte-sharp/0.16/vte-api.xml
+
+(wnck-sharp)
+  /usr/lib/mono/gac/wnck-sharp/2.20.0.0__35e10195dab3c99f/wnck-sharp.dll
+  /usr/lib/mono/gac/wnck-sharp/2.20.0.0__35e10195dab3c99f/wnck-sharp.dll.config
+  /usr/lib/mono/wnck-sharp-2.20/wnck-sharp.dll
+  /usr/lib/pkgconfig/wnck-sharp-1.0.pc
+  /usr/share/wnck-sharp/2.20/wnck-api.xml
+
+------------------
+
+Port Notes:
+
+----- version 2.20.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
