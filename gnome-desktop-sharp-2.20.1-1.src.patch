@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/configure.in src/gnome-desktop-sharp-2.20.1/configure.in
 --- origsrc/gnome-desktop-sharp-2.20.1/configure.in	2008-03-10 12:42:47.000000000 -0500
 +++ src/gnome-desktop-sharp-2.20.1/configure.in	2008-04-22 22:30:30.796875000 -0500
 @@ -5,7 +5,7 @@
@@ -47,7 +46,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  AC_SUBST(LIB_SUFFIX)
  AC_SUBST(GENERATED_SOURCES)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/gnomedesktop/gnomedesktop-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/gnomedesktop/gnomedesktop-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/gnomedesktop/gnomedesktop-sharp.dll.config.in	2008-01-29 16:04:32.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/gnomedesktop/gnomedesktop-sharp.dll.config.in	2008-04-22 22:31:40.015625000 -0500
 @@ -1,7 +1,7 @@
@@ -63,7 +61,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +  <dllmap dll="libgtk-win32-2.0-0.dll" target="@LIB_PREFIX@gtk-x11-2.0@LIB_SONAME@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gnome-desktop-2" target="@LIB_PREFIX@gnome-desktop-2@LIB_SONAME@2@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/gtkhtml/gtkhtml-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/gtkhtml/gtkhtml-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/gtkhtml/gtkhtml-sharp.dll.config.in	2007-11-01 22:59:55.000000000 -0500
 +++ src/gnome-desktop-sharp-2.20.1/gtkhtml/gtkhtml-sharp.dll.config.in	2008-04-22 22:30:30.796875000 -0500
 @@ -1,4 +1,4 @@
@@ -73,7 +70,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +  <dllmap dll="libgobject-2.0-0.dll" target="@LIB_PREFIX@gobject-2.0@LIB_SONAME@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gtkhtml-3.0" target="@LIB_PREFIX@gtkhtml-3.14@LIB_SONAME@19@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/gtksourceview/gtksourceview2-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/gtksourceview/gtksourceview2-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/gtksourceview/gtksourceview2-sharp.dll.config.in	2008-02-01 13:54:28.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/gtksourceview/gtksourceview2-sharp.dll.config.in	2008-04-22 22:32:04.890625000 -0500
 @@ -1,5 +1,5 @@
@@ -85,7 +81,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +  <dllmap dll="libgobject-2.0-0.dll" target="@LIB_PREFIX@gobject-2.0@LIB_SONAME@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gtksourceview-2.0" target="@LIB_PREFIX@gtksourceview-2.0@LIB_SONAME@0@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/nautilusburn/nautilusburn-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/nautilusburn/nautilusburn-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/nautilusburn/nautilusburn-sharp.dll.config.in	2007-12-17 15:53:54.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/nautilusburn/nautilusburn-sharp.dll.config.in	2008-04-22 22:32:22.359375000 -0500
 @@ -1,3 +1,3 @@
@@ -93,7 +88,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 -  <dllmap dll="nautilus-burn" target="libnautilus-burn@LIB_PREFIX@.4@LIB_SUFFIX@"/>
 +  <dllmap dll="nautilus-burn" target="@LIB_PREFIX@nautilus-burn@LIB_SONAME@4@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/rsvg/rsvg2-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/rsvg/rsvg2-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/rsvg/rsvg2-sharp.dll.config.in	2007-12-12 22:17:02.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/rsvg/rsvg2-sharp.dll.config.in	2008-04-22 22:30:30.812500000 -0500
 @@ -1,3 +1,3 @@
@@ -101,7 +95,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 -  <dllmap dll="rsvg-2" target="librsvg-2@LIB_PREFIX@.2@LIB_SUFFIX@"/>
 +  <dllmap dll="rsvg-2" target="@LIB_PREFIX@rsvg-2@LIB_SONAME@2@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/vte/glue/Makefile.am src/gnome-desktop-sharp-2.20.1/vte/glue/Makefile.am
 --- origsrc/gnome-desktop-sharp-2.20.1/vte/glue/Makefile.am	2007-12-17 11:58:12.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/vte/glue/Makefile.am	2008-04-22 22:30:30.812500000 -0500
 @@ -10,7 +10,7 @@
@@ -113,7 +106,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  libvtesharpglue_2_la_LIBADD = $(VTE_LIBS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/vte/vte-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/vte/vte-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/vte/vte-sharp.dll.config.in	2007-12-12 15:13:06.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/vte/vte-sharp.dll.config.in	2008-04-22 22:30:30.828125000 -0500
 @@ -1,5 +1,6 @@
@@ -126,7 +118,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +  <dllmap dll="vte" target="@LIB_PREFIX@vte@LIB_SONAME@9@LIB_SUFFIX@"/>
 +  <dllmap dll="vtesharpglue-2" target="@LIB_PREFIX@vtesharpglue-2@LIB_SUFFIX@"/>
  </configuration>
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/gnome-desktop-sharp-2.20.1/wnck/wnck-sharp.dll.config.in src/gnome-desktop-sharp-2.20.1/wnck/wnck-sharp.dll.config.in
 --- origsrc/gnome-desktop-sharp-2.20.1/wnck/wnck-sharp.dll.config.in	2008-01-07 15:08:08.000000000 -0600
 +++ src/gnome-desktop-sharp-2.20.1/wnck/wnck-sharp.dll.config.in	2008-04-22 22:32:54.015625000 -0500
 @@ -1,4 +1,4 @@
