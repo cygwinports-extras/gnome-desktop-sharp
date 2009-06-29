@@ -1,4 +1,4 @@
 category: Dotnet Gnome
-requires: cygwin mono libgnome-desktop2 glib-sharp2 gtk-sharp2
+requires: mono libgnome-desktop2 glib-sharp2 gtk-sharp2
 sdesc: "Mono libgnome-desktop bindings"
 ldesc: "Mono C-Sharp GNOME library bindings"

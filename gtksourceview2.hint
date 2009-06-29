@@ -1,5 +1,5 @@
 category: Dotnet Gnome
-requires: cygwin mono gtksourceview2 glib-sharp2 gtk-sharp2
+requires: mono gtksourceview2 glib-sharp2 gtk-sharp2
 external-source: gnome-desktop-sharp
 sdesc: "Mono GtkSourceView2 bindings"
 ldesc: "Mono C-Sharp GNOME library bindings"
