@@ -1,0 +1,43 @@
+inherit mono gnome.org
+
+my_pn="gtk-sharp-2.0"
+
+DESCRIPTION="GNOME Desktop C-Sharp bindings"
+HOMEPAGE="http://gtk-sharp.sourceforge.net/"
+
+PATCH_URI="2.26.0-dllmap-cygwin.patch"
+
+PKG_NAMES="${PN} mono-gnome-panel-sharp2.24 mono-gnome-print-sharp2.18
+           mono-gnomedesktop-sharp2.20 mono-gtkhtml-sharp3.14 mono-gtksourceview2-sharp2.0
+           mono-rsvg2-sharp2.18 mono-vte-sharp0.16 mono-wnck-sharp2.20"
+gnome_desktop_sharp_CONTENTS="usr/share/doc/"
+mono_gnome_panel_sharp2_24_CONTENTS="usr/*/*gnomepanelsharpglue* \
+			usr/lib/mono/gac/gnome-panel-*/ usr/lib/mono/gnome-panel-*/ \
+			usr/lib/pkgconfig/gnome-panel-* usr/share/gnome-panel-sharp/"
+mono_gnome_print_sharp2_18_CONTENTS="usr/lib/mono/gac/gnome-print-*/ \
+			usr/lib/mono/gnome-print-*/ usr/lib/pkgconfig/gnome-print-* \
+			usr/share/gnome-print-sharp/"
+mono_gnomedesktop_sharp2_20_CONTENTS="usr/lib/mono/gac/gnomedesktop-*/ \
+			usr/lib/mono/gnomedesktop-*/ usr/lib/pkgconfig/gnome-desktop-* \
+			usr/share/gnomedesktop-sharp/"
+mono_gtkhtml_sharp3_14_CONTENTS="usr/*/*gtkhtmlsharpglue* \
+			usr/lib/mono/gac/gtkhtml-*/ usr/lib/mono/gtkhtml-*/ \
+			usr/lib/pkgconfig/gtkhtml-* usr/share/gtkhtml-sharp/"
+mono_gtksourceview2_sharp2_0_CONTENTS="usr/*/*gtksourceview2sharpglue* \
+			usr/lib/mono/gac/gtksourceview2-*/ usr/lib/mono/gtksourceview2-*/ \
+			usr/lib/pkgconfig/gtksourceview2-* usr/share/gtksourceview2-sharp/"
+mono_rsvg2_sharp2_18_CONTENTS="usr/lib/mono/gac/rsvg2-*/ usr/lib/mono/rsvg2-*/ \
+			usr/lib/pkgconfig/rsvg2-* usr/share/rsvg2-sharp/"
+mono_vte_sharp0_16_CONTENTS="usr/*/*vtesharpglue* usr/lib/mono/gac/vte-*/ \
+			usr/lib/mono/vte-*/ usr/lib/pkgconfig/vte-* usr/share/vte-sharp/"
+mono_wnck_sharp2_20_CONTENTS="usr/*/*wncksharpglue* usr/lib/mono/gac/wnck-*/ \
+			usr/lib/mono/wnck-*/ usr/lib/pkgconfig/wnck-* usr/share/wnck-sharp/"
+
+CYGCONF_ARGS="--disable-static"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	sed -i -e 's!shouldnotlink=no!shouldnotlink=yes!' ${D}/usr/lib/*.la
+}

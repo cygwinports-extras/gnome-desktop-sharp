@@ -1,5 +1,0 @@
-category: Dotnet Gnome
-requires: mono librsvg2 glib-sharp2 gtk-sharp2
-external-source: gnome-desktop-sharp
-sdesc: "Mono RSVG bindings"
-ldesc: "Mono C-Sharp GNOME library bindings"

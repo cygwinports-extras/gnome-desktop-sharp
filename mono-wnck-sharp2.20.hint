@@ -1,5 +1,5 @@
-category: Dotnet Gnome
-requires: mono libwnck1_22 glib-sharp2 gtk-sharp2
+category: DotNET
+requires: libwnck1_22 mono-glib-sharp2.0 mono-gtk-sharp2.0 mono-mscorlib1.0
 external-source: gnome-desktop-sharp
 sdesc: "Mono WNCK bindings"
 ldesc: "Mono C-Sharp GNOME library bindings"
