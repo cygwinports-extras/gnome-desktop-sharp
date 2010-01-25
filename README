@@ -17,13 +17,12 @@ Runtime requirements:
   librsvg2_2-2.26.0-1
   libvte9-0.22.5-1
   libwnck1_22-2.28.0-1
+  mono-2.4.3.1-1
   mono-art-sharp2.0-2.24.1-1
   mono-atk-sharp2.0-2.12.9-1
   mono-glib-sharp2.0-2.12.9-1
   mono-gnome-sharp2.24-2.24.1-1
   mono-gtk-sharp2.0-2.12.9-1
-  mono-Mono-Cairo1.0-2.4.3-1
-  mono-mscorlib1.0-2.4.3-1
   mono-pango-sharp2.0-2.12.9-1
 
 Build requirements:

@@ -1,5 +1,5 @@
 category: DotNET
-requires: libglib2.0_0 libgnomeprint2.2_0 libgnomeprintui2.2_0 mono-art-sharp2.0 mono-glib-sharp2.0 mono-gtk-sharp2.0 mono-mscorlib1.0 mono-pango-sharp2.0
+requires: libglib2.0_0 libgnomeprint2.2_0 libgnomeprintui2.2_0 mono mono-art-sharp2.0 mono-glib-sharp2.0 mono-gtk-sharp2.0 mono-pango-sharp2.0
 external-source: gnome-desktop-sharp
 sdesc: "Mono libgnomeprint bindings"
 ldesc: "Mono C-Sharp GNOME library bindings"
