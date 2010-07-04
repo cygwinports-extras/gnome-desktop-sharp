@@ -7,7 +7,8 @@ HOMEPAGE="http://gtk-sharp.sourceforge.net/"
 
 PATCH_URI="2.26.0-dllmap-cygwin.patch"
 
-PKG_NAMES="${PN} mono-gnome-panel-sharp2.24 mono-gnome-print-sharp2.18
+# mono-gnome-panel-sharp2.24 mono-gnome-print-sharp2.18
+PKG_NAMES="${PN}
            mono-gnomedesktop-sharp2.20 mono-gtkhtml-sharp3.14 mono-gtksourceview2-sharp2.0
            mono-rsvg2-sharp2.18 mono-vte-sharp0.16 mono-wnck-sharp2.20"
 gnome_desktop_sharp_CONTENTS="usr/share/doc/"
@@ -34,10 +35,3 @@ mono_wnck_sharp2_20_CONTENTS="usr/*/*wncksharpglue* usr/lib/mono/gac/wnck-*/ \
 			usr/lib/mono/wnck-*/ usr/lib/pkgconfig/wnck-* usr/share/wnck-sharp/"
 
 CYGCONF_ARGS="--disable-static"
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	sed -i -e 's!shouldnotlink=no!shouldnotlink=yes!' ${D}/usr/lib/*.la
-}

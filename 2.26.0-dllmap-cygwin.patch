@@ -59,19 +59,8 @@
 +  <dllmap dll="libgobject-2.0-0.dll" target="@LIB_PREFIX@gobject-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
 +  <dllmap dll="libgthread-2.0-0.dll" target="@LIB_PREFIX@gthread-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
 +  <dllmap dll="libgtk-win32-2.0-0.dll" target="@LIB_PREFIX@gtk-x11-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
-+  <dllmap dll="gnome-desktop-2" target="@LIB_PREFIX@gnome-desktop-2@LIB_MIDDLE@11@LIB_SUFFIX@"/>
++  <dllmap dll="gnome-desktop-2" target="@LIB_PREFIX@gnome-desktop-2@LIB_MIDDLE@17@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/gnomepanel/glue/Makefile.am	2008-08-06 16:42:15.000000000 -0500
-+++ src/gnome-desktop-sharp-2.26.0/gnomepanel/glue/Makefile.am	2009-12-09 02:51:56.745928800 -0600
-@@ -10,7 +10,7 @@ libgnomepanelsharpglue_2_la_SOURCES = pa
- 
- nodist_libgnomepanelsharpglue_2_la_SOURCES = generated.c
- 
--libgnomepanelsharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libgnomepanelsharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libgnomepanelsharpglue_2_la_LIBADD = $(GNOME_PANEL_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/gnomepanel/gnome-panel-sharp.dll.config.in	2008-08-27 14:04:35.000000000 -0500
 +++ src/gnome-desktop-sharp-2.26.0/gnomepanel/gnome-panel-sharp.dll.config.in	2009-12-09 02:52:57.508034800 -0600
 @@ -1,4 +1,4 @@
@@ -92,17 +81,6 @@
 +  <dllmap dll="gnomeprint-2-2" target="@LIB_PREFIX@gnomeprint-2-2@LIB_MIDDLE@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gnomeprintui-2-2" target="@LIB_PREFIX@gnomeprintui-2-2@LIB_MIDDLE@0@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/gtkhtml/glue/Makefile.am	2008-08-06 13:15:54.000000000 -0500
-+++ src/gnome-desktop-sharp-2.26.0/gtkhtml/glue/Makefile.am	2009-12-09 02:51:59.772334100 -0600
-@@ -10,7 +10,7 @@ libgtkhtmlsharpglue_2_la_SOURCES = # emp
- 
- nodist_libgtkhtmlsharpglue_2_la_SOURCES = generated.c
- 
--libgtkhtmlsharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libgtkhtmlsharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libgtkhtmlsharpglue_2_la_LIBADD = $(GTKHTML_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/gtkhtml/gtkhtml-sharp.dll.config.in	2008-03-06 20:22:23.000000000 -0600
 +++ src/gnome-desktop-sharp-2.26.0/gtkhtml/gtkhtml-sharp.dll.config.in	2009-12-09 02:51:21.302667000 -0600
 @@ -1,4 +1,4 @@
@@ -112,17 +90,6 @@
 +  <dllmap dll="libgobject-2.0-0.dll" target="@LIB_PREFIX@gobject-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gtkhtml-3.0" target="@LIB_PREFIX@gtkhtml-3.14@LIB_MIDDLE@19@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/gtksourceview/glue/Makefile.am	2008-08-06 13:12:39.000000000 -0500
-+++ src/gnome-desktop-sharp-2.26.0/gtksourceview/glue/Makefile.am	2009-12-09 02:52:03.500740600 -0600
-@@ -10,7 +10,7 @@ libgtksourceview2sharpglue_2_la_SOURCES 
- 
- nodist_libgtksourceview2sharpglue_2_la_SOURCES = generated.c
- 
--libgtksourceview2sharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libgtksourceview2sharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libgtksourceview2sharpglue_2_la_LIBADD = $(GTKSOURCEVIEW_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/gtksourceview/gtksourceview2-sharp.dll.config.in	2008-03-06 20:22:22.000000000 -0600
 +++ src/gnome-desktop-sharp-2.26.0/gtksourceview/gtksourceview2-sharp.dll.config.in	2009-12-09 02:51:21.302667000 -0600
 @@ -1,5 +1,5 @@
@@ -134,17 +101,6 @@
 +  <dllmap dll="libgobject-2.0-0.dll" target="@LIB_PREFIX@gobject-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
 +  <dllmap dll="gtksourceview-2.0" target="@LIB_PREFIX@gtksourceview-2.0@LIB_MIDDLE@0@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/nautilusburn/glue/Makefile.am	2008-08-06 13:01:32.000000000 -0500
-+++ src/gnome-desktop-sharp-2.26.0/nautilusburn/glue/Makefile.am	2009-12-09 02:52:06.105945100 -0600
-@@ -10,7 +10,7 @@ libnautilusburnsharpglue_2_la_SOURCES = 
- 
- nodist_libnautilusburnsharpglue_2_la_SOURCES = generated.c
- 
--libnautilusburnsharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libnautilusburnsharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libnautilusburnsharpglue_2_la_LIBADD = $(NAUTILUSBURN_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/nautilusburn/nautilusburn-sharp.dll.config.in	2008-03-06 20:22:21.000000000 -0600
 +++ src/gnome-desktop-sharp-2.26.0/nautilusburn/nautilusburn-sharp.dll.config.in	2009-12-09 02:51:21.318267100 -0600
 @@ -1,3 +1,3 @@
@@ -159,17 +115,6 @@
 -  <dllmap dll="rsvg-2" target="librsvg-2@LIB_PREFIX@.2@LIB_SUFFIX@"/>
 +  <dllmap dll="rsvg-2" target="@LIB_PREFIX@rsvg-2@LIB_MIDDLE@2@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/vte/glue/Makefile.am	2008-03-06 20:22:21.000000000 -0600
-+++ src/gnome-desktop-sharp-2.26.0/vte/glue/Makefile.am	2009-12-09 02:51:21.318267100 -0600
-@@ -10,7 +10,7 @@ libvtesharpglue_2_la_SOURCES = # empty
- 
- nodist_libvtesharpglue_2_la_SOURCES = generated.c
- 
--libvtesharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libvtesharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libvtesharpglue_2_la_LIBADD = $(VTE_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/vte/vte-sharp.dll.config.in	2008-03-06 20:22:21.000000000 -0600
 +++ src/gnome-desktop-sharp-2.26.0/vte/vte-sharp.dll.config.in	2009-12-09 02:51:21.318267100 -0600
 @@ -1,5 +1,6 @@
@@ -182,17 +127,6 @@
 +  <dllmap dll="vte" target="@LIB_PREFIX@vte@LIB_MIDDLE@9@LIB_SUFFIX@"/>
 +  <dllmap dll="vtesharpglue-2" target="@LIB_PREFIX@vtesharpglue-2@LIB_SUFFIX@"/>
  </configuration>
---- origsrc/gnome-desktop-sharp-2.26.0/wnck/glue/Makefile.am	2008-08-06 12:56:51.000000000 -0500
-+++ src/gnome-desktop-sharp-2.26.0/wnck/glue/Makefile.am	2009-12-09 02:52:11.331954300 -0600
-@@ -10,7 +10,7 @@ libwncksharpglue_2_la_SOURCES = # empty
- 
- nodist_libwncksharpglue_2_la_SOURCES = generated.c
- 
--libwncksharpglue_2_la_LDFLAGS = -module -avoid-version -no-undefined
-+libwncksharpglue_2_la_LDFLAGS = -avoid-version -no-undefined
- 
- libwncksharpglue_2_la_LIBADD = $(WNCK_LIBS)
- 
 --- origsrc/gnome-desktop-sharp-2.26.0/wnck/wnck-sharp.dll.config.in	2008-03-06 20:22:22.000000000 -0600
 +++ src/gnome-desktop-sharp-2.26.0/wnck/wnck-sharp.dll.config.in	2009-12-09 02:51:21.333867100 -0600
 @@ -1,4 +1,4 @@
